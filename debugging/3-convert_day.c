@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * convert_day - converts day of month to day of year, without accounting
@@ -36,7 +37,7 @@ case 9:
 day = 243 + day;
 break;
 case 10:
-day = 273 + day;
+day = 274 + day;
 break;
 case 11:
 day = 304 + day;
