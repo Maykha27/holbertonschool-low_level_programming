@@ -1,5 +1,4 @@
 #include "main.h"
-i
 /**
   * more_numbers - check the résult
   * Return: Always (0)
