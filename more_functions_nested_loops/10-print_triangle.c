@@ -1,7 +1,7 @@
 #include"main.h"
 /**
   * print_triangle - check the résult
-  * @size:
+  * @size: the size of the triangle
   * Return:Alvays(O)
 */
 void print_triangle(int size)
