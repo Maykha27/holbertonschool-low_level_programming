@@ -17,7 +17,12 @@ int i;
 			printf("BUZZ");
 		if ((i % 3 != 0) && (i % 5 != 0))
 			printf("FIZZBUZZ");
-		printf("\n");
+		else
+			printf("%d", i);
+		if (i == 100)
+			continue;
+		printf(" ");
 	}
-	return (0);
+		printf("\n");
+		return (0);
 }
