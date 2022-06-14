@@ -14,9 +14,9 @@ int i;
 		if (i % 3 == 0)
 			printf("FIZZ");
 		if (i % 5 == 0)
-			printf("buzz");
+			printf("BUZZ");
 		if ((i % 3 != 0) && (i % 5 != 0))
-			printf("number=%d", 1);
+			printf("FIZZBUZZ");
 		printf("\n");
 	}
 	return (0);
