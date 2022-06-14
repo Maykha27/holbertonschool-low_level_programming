@@ -13,16 +13,13 @@ int i;
 	{
 		if (i % 3 == 0)
 			printf("FIZZ");
-		if (i % 5 == 0)
+		else if (i % 5 == 0)
 			printf("BUZZ");
-		if ((i % 3 != 0) && (i % 5 != 0))
+		else if ((i % 3 != 0) && (i % 5 != 0))
 			printf("FIZZBUZZ");
 		else
-			printf("%d", i);
-		if (i == 100)
-			continue;
-		printf(" ");
-	}
+			printf("number=%d", i);
 		printf("\n");
+}
 		return (0);
 }
