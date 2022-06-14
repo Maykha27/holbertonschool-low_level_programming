@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * more_numbers - check the résult
+  * more_numbers - check the résult to be exo
   * Return: Always (0)
  */
 void more_numbers(void)
