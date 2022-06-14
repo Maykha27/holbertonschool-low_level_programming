@@ -12,14 +12,14 @@ int i;
 	for (i = 1; i <= 100; ++i)
 	{
 		if (i % 3 == 0)
-			printf("FIZZ");
+			printf("FIZZ ");
 		else if (i % 5 == 0)
-			printf("BUZZ");
-		else if ((i % 3 != 0) && (i % 5 != 0))
-			printf("FIZZBUZZ");
+			printf("BUZZ ");
+		else if ((i % 3 == 0) && (i % 5 == 0))
+			printf("FIZZBUZZ ");
 		else
-			printf("number=%d", i);
+			printf("%d ", i);
+	}
 		printf("\n");
-}
 		return (0);
 }
