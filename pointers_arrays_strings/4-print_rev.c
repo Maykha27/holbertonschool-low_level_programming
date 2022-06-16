@@ -2,13 +2,13 @@
 /**
   *print_rev - prints a string, in reverse
   *@s: input to reverse
-  *Retenu: Alwways O
+  *Retenu: string and in reverse
   */
 void print_rev(char *s)
 {
 	char rev = s[0];
-		int a = 0;
-		int b;
+	int a = 0;
+	int b;
 
 		while (s[a] != '\0')
 			a++;
