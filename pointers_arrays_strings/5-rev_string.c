@@ -1,6 +1,6 @@
 #include"main.h"
 /**
-  * rev_string - a function
+  * rev_string - a function that reservea string
   * @s: imput to reserve
   * Return: string and in reserve
   */
@@ -17,6 +17,6 @@ void rev_string(char *s)
 		a--;
 		rev = s[i];
 		s[i] = s[a];
-		s[a] = rev
+		s[a] = rev;
 	}
 }
