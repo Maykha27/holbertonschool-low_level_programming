@@ -1,8 +1,8 @@
 #include"main.h"
 #include<stdio.h>
 /**
-  * strlen - the length of a string.
-  * @s: the charactere
+  * _strlen - the length of a string.
+  * @s: string passed ti function
   * Return: a
  */
 int _strlen(char *s)
