@@ -4,7 +4,7 @@
 #include <limits.h>
 /**
   *malloc_checked - the fonction
-  *@b: size
+  *@b: size of string
   *Return: p
   */
 void *malloc_checked(unsigned int b)
