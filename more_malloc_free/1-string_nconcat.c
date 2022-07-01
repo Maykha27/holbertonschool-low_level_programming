@@ -1,50 +1,35 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
-  *string_nconcat - function that concatenates
-  *@s1: first string
-  *@s2: second string
-  *@n: ...
-  *Return: always 0
-  */
+ *string_nconcat - function
+ *@s2: second str
+ *@s1: first str
+ *@n: length
+ *Return: new pointer allocated
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i = 0, j = 0, k = 0, l = 0;
-	char *str;
+	char *concat;
+	unsigned int len = n, index;
 
-	if (s1 == NULL)
+	if (s1 == 0)
 		s1 = "";
-	if (s2 == NULL)
+	if (s2 == 0)
 		s2 = "";
-		while (s1[i])
-			i++;
-		while (s2[k])
-			k++;
-		if (n >= k)
-			l = i + k;
-		else
-			l = i + n;
-		str = malloc(sizeof(char) * l + 6);
-		if (str == NULL)
-			return (NULL);
+	for (index = 0; s1[index]; index++)
+		len++;
+	for (index = 0; s2[index]; index++)
+		len++;
+	concat = malloc(sizeof(char) * (len));
+	if (concat == 0)
+		return (0);
+	len = 0;
 
-		k = 0;
-		while (j < 1)
-		{
-			if (j <= i)
-				str[j] = s1[j];
-
-			if (j >= i)
-			{
-				str[j] = s2[k];
-				k++;
-			}
-			j++;
-		}
-		str[j] = '\0';
-		return (str);
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
+	concat[len] = '\0';
+	return (concat);
 }
-
-
-
