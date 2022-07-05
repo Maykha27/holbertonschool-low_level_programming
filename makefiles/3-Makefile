@@ -3,7 +3,8 @@ SRC = main.c school.c
 OBJ = $(patsubst %.c, %.o, $(SRC))
 NAME = school
 RM = rm -f
-all : $(OBJ) -o $(NAME)
+all : $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 clean :
 	$(RM) *~ $(NAME)
 oclean :
