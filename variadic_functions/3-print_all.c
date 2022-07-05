@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
+#include <stdlib.h>
 /**
   *print_char - prints a char from var args
   *@list: va_list to print from
@@ -53,12 +54,12 @@ void print_all(const char * const format, ...)
 {
 	const char *ptr;
 	va_list list;
-	funckey key[4] = { {print_char, 'c'}, {print_int, 'i'},
+	funckey key[4] = { {printf_char, 'c'}, {printf_int, 'i'},
 		{printf_float, 'f'}, {printf_string, 's'}};
 	int keyind = 0, notfirst = 0;
 
 	ptr = format;
-	var_start(list, format);
+	va_start(list, format);
 	while (format != NULL && *ptr)
 	{
 		if (key[keyind].spec == *ptr)
