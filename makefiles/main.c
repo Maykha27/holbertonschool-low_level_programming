@@ -5,6 +5,6 @@
   */
 int main(void)
 {
-	point_school();
+	print_school();
 	return (EXIT_SUCCESS);
 }
