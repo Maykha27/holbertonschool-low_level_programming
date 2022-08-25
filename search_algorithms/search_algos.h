@@ -3,8 +3,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-/** struct skiplist_s - Singly linked list with an express lane
+/**
+ * struct skiplist_s - Singly linked list with an express lane
+ *
  * @n: Integer
  * @index: Index of the node in the list
  * @next: Pointer to the next node
@@ -20,7 +21,7 @@ typedef struct skiplist_s
 	struct skiplist_s *next;
 	struct skiplist_s *express;
 } skiplist_t;
-/* *
+/**
  * struct listint_s - singly linked list
  *
  * @n: Integer
@@ -38,5 +39,4 @@ typedef struct listint_s
 } listint_t;
 
 int linear_search(int *array, size_t size, int value);
-
-# endif
+#endif
